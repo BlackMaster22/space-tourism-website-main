@@ -5,5 +5,5 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss(),],
-  base: 'https://blackmaster22.github.io/space-tourism-website-main/',
+  //base: 'https://blackmaster22.github.io/space-tourism-website-main/',
 })
