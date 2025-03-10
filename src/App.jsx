@@ -17,7 +17,7 @@ export const App = () => {
   useEffect(() => {
     const path = location.pathname;
     switch (path) {
-      case '/':
+      case '/space-tourism-website-main':
         setBorder('00');
         break;
       case '/destination':
@@ -35,7 +35,7 @@ export const App = () => {
   }, [location.pathname])
 
   const navegacion = [
-    { number: '00', component: 'HOME', path: '/' },
+    { number: '00', component: 'HOME', path: '/space-tourism-website-main' },
     { number: '01', component: 'DESTINATION', path: '/destination' },
     { number: '02', component: 'CREW', path: '/crew' },
     { number: '03', component: 'TECHNOLOGY', path: '/technology' },
@@ -109,7 +109,7 @@ export const App = () => {
           </header>
           <div className='h-auto'>
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/space-tourism-website-main" element={<Home />} />
               <Route path="/destination" element={<Destinations />} />
               <Route path="/crew" element={<Crew />} />
               <Route path="/technology" element={<Technology />} />

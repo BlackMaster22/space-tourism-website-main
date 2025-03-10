@@ -21,7 +21,7 @@ export const useDynamicBackground = () => {
 
   useEffect(() => {
     switch (location.pathname) {
-      case '/':
+      case '/space-tourism-website-main':
         if (screenWidth < 400) {
           setBackground(homemobile);
         } else if (screenWidth < 1024) {
